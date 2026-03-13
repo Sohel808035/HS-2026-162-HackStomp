@@ -1,0 +1,137 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0c0e12;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #0e1117, #050608);
+}
+
+#root {
+  width: 100%;
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Layout Utilities */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #00ffcc, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form Elements */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+input[type="number"], input[type="range"] {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem;
+  color: #fff;
+  outline: none;
+}
+
+input[type="range"] {
+  height: 6px;
+  cursor: pointer;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
