@@ -1,0 +1,2 @@
+name,username,monthly_income,income_variance,upi_transaction_count,avg_transaction_value,late_bill_payment_days,savings_ratio,pending_payment_ratio,balance_volatility,essential_spending_ratio
+Sahil,sahil_shaikh,45000,0.28,62,540,3,0.22,0.08,0.31,0.64

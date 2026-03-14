@@ -1,0 +1,2 @@
+name,username,monthly_income,income_variance,upi_transaction_count,avg_transaction_value,late_bill_payment_days,savings_ratio,pending_payment_ratio,balance_volatility,essential_spending_ratio
+Neha,neha_kapoor,85000,0.12,145,320,0,0.38,0.02,0.15,0.45

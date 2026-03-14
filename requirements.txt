@@ -1,0 +1,9 @@
+Flask
+Werkzeug
+gunicorn
+pandas
+numpy
+scikit-learn
+shap
+xgboost
+pdfplumber
